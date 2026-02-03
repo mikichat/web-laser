@@ -1,10 +1,11 @@
 'use client'
 
 import './globals.css'
-import { EditableText, EditModePanel } from '@/components/EditableText'
+import { EditableText, EditModePanel, ContentProvider } from '@/components/EditableText'
 
 export default function Home() {
   return (
+    <ContentProvider>
     <main className="min-h-screen bg-slate-950">
       <EditModePanel />
       
@@ -420,5 +421,6 @@ export default function Home() {
         </div>
       </footer>
     </main>
+    </ContentProvider>
   )
 }
